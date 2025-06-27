@@ -25,35 +25,46 @@
 
   <title>Fasil Valiyattil</title>
   <style>
+    :root {
+      --bg: #1e1e1e;
+      --text: #f1f1f1;
+      --accent: #333;
+      --accent-hover: #555;
+    }
+
     body {
       margin: 0;
-      padding: 0;
-      background-color: #1e1e1e;
-      color: #f1f1f1;
+      padding: 2rem;
+      background-color: var(--bg);
+      color: var(--text);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
+      box-sizing: border-box;
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       max-width: 600px;
       margin-bottom: 2rem;
       line-height: 1.6;
+      padding: 0 1rem;
     }
 
     .socials {
       display: flex;
       gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .socials a {
@@ -63,29 +74,55 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-color: #333;
+      background-color: var(--accent);
       color: white;
       text-decoration: none;
       transition: background 0.3s;
     }
 
     .socials a:hover {
-      background-color: #555;
+      background-color: var(--accent-hover);
     }
 
     .socials svg {
       width: 24px;
       height: 24px;
-      fill: #f1f1f1;
+      fill: var(--text);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+      }
+
+      .socials a {
+        width: 45px;
+        height: 45px;
+      }
+
+      .socials svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Coming Soon...</h1>
   <p>
-    Thanks for visiting my website. This website is not ready yet.<br />
-    Meanwhile, check out my LinkedIn and other social media to know more about me.
+    Thanks for visiting my website. It's currently under construction.<br />
+    In the meantime, feel free to explore my LinkedIn and other social media to learn more about me.
   </p>
+
 
   <div class="socials">
     <a href="https://www.linkedin.com/in/fasilv843/" target="_blank" aria-label="LinkedIn">
